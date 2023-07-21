@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="light"
   data-auto-appearance="true"><head>
-	<meta name="generator" content="Hugo 0.115.4">
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -9,18 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>r4f705&#39;s blog</title>
-  <meta name="title" content="r4f705&#39;s blog" />
+  <title>Haystack &middot; r4f705&#39;s blog</title>
+  <meta name="title" content="Haystack &middot; r4f705&#39;s blog" />
+  
+  <meta name="description" content="Insecure jwt token generation in annotator tool." />
+  <meta name="keywords" content="cve, web, reversing, docker, jwt, " />
   
   
-  
-  
-  
-  <link rel="canonical" href="https://r4f705.github.io/" />
-  
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="r4f705's blog" />
-  
-  <link rel="alternate" type="application/json" href="/index.json" title="r4f705's blog" />
+  <link rel="canonical" href="https://r4f705.github.io/bug-bounty/haystack/" />
   
   
   
@@ -63,31 +58,44 @@
   
   
   
-  <meta property="og:title" content="r4f705&#39;s blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://r4f705.github.io/" />
+  <meta property="og:title" content="Haystack" />
+<meta property="og:description" content="Insecure jwt token generation in annotator tool." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://r4f705.github.io/bug-bounty/haystack/" /><meta property="article:section" content="bug-bounty" />
+<meta property="article:published_time" content="2023-07-21T22:49:05+03:00" />
+<meta property="article:modified_time" content="2023-07-21T22:49:05+03:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="r4f705&#39;s blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="Haystack"/>
+<meta name="twitter:description" content="Insecure jwt token generation in annotator tool."/>
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https:\/\/r4f705.github.io\/",
-    "name": "r4f705\u0027s blog",
-    
+    "@type": "Article",
+    "articleSection": "Bug-bounties",
+    "name": "Haystack",
+    "headline": "Haystack",
+    "description": "Insecure jwt token generation in annotator tool.",
+    "abstract": "JWT Token Forgery for Haystack\u0026rsquo;s Annotator Tool (CVE-2023-1712) # Introduction # The purpose of this disclosure is to ethically report a web vulnerability found in the Annotator Tool.",
     "inLanguage": "en",
-    "url": "https:\/\/r4f705.github.io\/",
-    
-    "publisher" : {
+    "url" : "https:\/\/r4f705.github.io\/bug-bounty\/haystack\/",
+    "author" : {
       "@type": "Person",
       "name": "r4f705"
-    }
-  }
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-07-21T22:49:05\u002b03:00",
+    "datePublished": "2023-07-21T22:49:05\u002b03:00",
+    
+    "dateModified": "2023-07-21T22:49:05\u002b03:00",
+    
+    "keywords": ["cve","web","reversing","docker","jwt"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "486"
+  }]
   </script>
 
 
@@ -422,37 +430,136 @@
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
       
+
+
+<article>
   
   
-    <article
-  class="
-    h-full
-   flex flex-col items-center justify-center text-center"
->
-  <header class="flex flex-col items-center mb-3">
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
     
-      
-      
-        
-        <img
-          class="mb-2 rounded-full h-36 w-36"
-          width="144"
-          height="144"
-          alt="r4f705"
-          src="/img/r4f705_no_letters_hu5d5e04bad7e504a4f03e77a113af88d4_147052_288x288_fill_q75_box_center.jpg"
-        />
-      
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/cpu.jpg);">
     
-    <h1 class="text-4xl font-extrabold">
-      r4f705
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      Haystack
     </h1>
-    
-      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        A key pressing hacker
-      </h2>
-    
-    <div class="mt-1 text-2xl">
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-07-21 22:49:05 &#43;0300 EEST">21 July 2023</time><span class="px-2 text-primary-500">&middot;</span><span>486 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="flex">
+  
+  
+  
+  
+  <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+    alt="r4f705" src="/img/r4f705_no_letters_hu5d5e04bad7e504a4f03e77a113af88d4_147052_192x192_fill_q75_box_center.jpg" />
+  
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      r4f705
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">Sometimes when I press the correct sequence of keys magic happens!</div>
+    
+    <div class="text-2xl sm:text-lg">
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
     
       
@@ -493,20 +600,157 @@
     
   </div>
 
+</div>
+  </div>
+</div>
+    
 
-    </div>
+    
+    
+    
+
+    
+
+    
+    <div class="mb-5"></div>
+    
+  
   </header>
-  <section class="prose dark:prose-invert"></section>
-</article>
-<section>
   
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+    
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
 
 
-</section>
+        <div class="max-w-prose mb-20">
+          <div id="jwt-token-forgery-for-haystacks-annotator-tool-cve-2023-1712" class="anchor"></div>
+<h1 class="relative group">JWT Token Forgery for Haystack&rsquo;s Annotator Tool (CVE-2023-1712) 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#jwt-token-forgery-for-haystacks-annotator-tool-cve-2023-1712" aria-label="Anchor">#</a></span>        
+    
+</h1>
+<div id="introduction" class="anchor"></div>
+<h2 class="relative group">Introduction 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>The purpose of this disclosure is to ethically report a web vulnerability found in the Annotator Tool. By analyzing the provided docker image, it was possible to gain access to the source code and identify a critical security flaw related to the generation of JSON Web Tokens (JWTs). This vulnerability allows low-level users to escalate their privileges and perform actions that were previously restricted.</p>
+<div id="vulnerability-details" class="anchor"></div>
+<h2 class="relative group">Vulnerability Details 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#vulnerability-details" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>The vulnerability stems from a hardcoded value found in the configuration file <code>config/config.production.js</code>. Specifically, the value of <code>config.jwt.secret = Hm************tA</code> is used to sign JWT tokens. Exploiting this weakness enables an attacker to create new JWT tokens with the &ldquo;super_admin&rdquo; role, granting unauthorized access and privileges.</p>
+<div id="exploitation-method" class="anchor"></div>
+<h2 class="relative group">Exploitation Method 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#exploitation-method" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>To exploit this vulnerability, the attacker needs to replicate the token generation process used by the application. This can be achieved by modifying the existing back-end code of the annotation tool. The following lines can be added to the <code>getSignedJWT</code> function in <code>app/service/userService.js</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-javascript" data-lang="javascript"><span class="line"><span class="cl"><span class="kr">const</span> <span class="nx">fs</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s2">&#34;fs&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kd">let</span> <span class="nx">x</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nx">app</span><span class="p">.</span><span class="nx">jwt</span><span class="p">.</span><span class="nx">sign</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">  <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">id</span><span class="o">:</span> <span class="mi">2</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">email</span><span class="o">:</span> <span class="s2">&#34;r4F705@proxy.com&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">role</span><span class="o">:</span> <span class="s2">&#34;super_admin&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="p">},</span>
+</span></span><span class="line"><span class="cl">  <span class="s2">&#34;Hm************tA&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nx">fs</span><span class="p">.</span><span class="nx">writeFile</span><span class="p">(</span><span class="s2">&#34;/tmp/test.txt&#34;</span><span class="p">,</span> <span class="nx">x</span><span class="p">,</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">=&gt;</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nx">console</span><span class="p">.</span><span class="nx">error</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">  <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">});</span>
+</span></span></code></pre></div><p>By incorporating this code snippet into a modified version of the back-end, the attacker can host a local instance of the application. Logging in with a regular user account on the modified instance will generate a new JWT token with the &ldquo;super_admin&rdquo; role. To utilize this forged token, the attacker can retrieve it from /tmp/test.txt within the running container or the host system. Then, by updating the value of the &ldquo;dpst-token&rdquo; found in the browser&rsquo;s local storage for the original login domain, the attacker can assume the elevated privileges associated with the &ldquo;super_admin&rdquo; role.</p>
+<p>
+
+
+
 
   
-
+  
+    
+  
+  
+    <figure>
       
+      <img
+        class="my-0 rounded-md"
+        src="/img/haystack-proof.png"
+        alt="alt text"
+      />
+      
+      <figcaption>logged in as admin at deepset.ai</figcaption>
+    </figure>
+  
+
+</p>
+<div id="impact" class="anchor"></div>
+<h2 class="relative group">Impact 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#impact" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>This vulnerability has significant implications for all current versions of the annotation tool, regardless of whether they are hosted online or within a company&rsquo;s internal network. Since the containers utilized by the tool share the same secret key, any forged tokens created using the vulnerability will be effective across all instances of the tool.</p>
+<p>The impact of this vulnerability is twofold, affecting both the integrity and availability of the tool and its associated data. Exploiting the vulnerability allows an attacker to gain super admin access without the need for a valid account, posing a severe security risk. With super admin privileges, an attacker can masquerade as any other user, leading to unauthorized modifications to the annotation process and the potential corruption of valuable training data for QA models. As a result, the reliability and trustworthiness of the annotation tool&rsquo;s outputs are compromised.</p>
+<p>Furthermore, an attacker can leverage scripted attacks to remove created users, significantly impeding the functionality and usability of the tool. The removal of user accounts can disrupt workflows and impede collaboration, rendering the tool&rsquo;s usage challenging and hindering productivity.</p>
+<p>Originally reported on <a href="https://huntr.dev/bounties/9a6b1fb4-ec9b-4cfa-af1e-9ce304924829/"   target="_blank">
+    huntr</a></p>
+
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_bug-bounty\/haystack\/index.md"
+        var oid_likes = "likes_bug-bounty\/haystack\/index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   

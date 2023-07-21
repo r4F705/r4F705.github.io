@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>r4f705&#39;s blog</title>
+    <link>https://r4f705.github.io/</link>
+    <description>Recent content on r4f705&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Fri, 21 Jul 2023 22:49:05 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Haystack</title>
+      <link>https://r4f705.github.io/bug-bounty/haystack/</link>
+      <pubDate>Fri, 21 Jul 2023 22:49:05 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/bug-bounty/haystack/</guid>
+      <description>JWT Token Forgery for Haystack&amp;rsquo;s Annotator Tool (CVE-2023-1712) # Introduction # The purpose of this disclosure is to ethically report a web vulnerability found in the Annotator Tool.</description>
+      
+    </item>
+    
+    <item>
+      <title>ARM Antidote</title>
+      <link>https://r4f705.github.io/binary/arm-antidote/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://r4f705.github.io/binary/arm-antidote/</guid>
+      <description>Lists # To define a list of items, just put a *, a -, or a + at the start of the line of each item of the list followed by at least a space, to end the list, leave a blank line</description>
+      
+    </item>
+    
+    <item>
+      <title>Easter Bunny</title>
+      <link>https://r4f705.github.io/web/easter-bunny/</link>
+      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://r4f705.github.io/web/easter-bunny/</guid>
+      <description>Headers # There are two ways to define headers:</description>
+      
+    </item>
+    
+  </channel>
+</rss>
