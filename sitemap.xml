@@ -4,48 +4,13 @@
   
     
       <url>
-            <loc>https://r4f705.github.io/ctf/</loc>
-            <lastmod>2023-07-26T16:06:22+03:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://r4f705.github.io/ctf/htb-pilgrimage/</loc>
-            <lastmod>2023-07-26T16:06:22+03:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
-            <loc>https://r4f705.github.io/</loc>
-            <lastmod>2023-07-26T16:06:22+03:00</lastmod>
-            <changefreq>daily</changefreq>
-            <priority>0.5</priority>
-          </url>
-    
-  
-    
-  
-    
-  
-    
-      <url>
             <loc>https://r4f705.github.io/bug-bounty/</loc>
             <lastmod>2023-07-21T22:49:05+03:00</lastmod>
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
     
   
     
@@ -57,6 +22,19 @@
             <changefreq>daily</changefreq>
             <priority>0.5</priority>
           </url>
+    
+  
+    
+  
+    
+      <url>
+            <loc>https://r4f705.github.io/</loc>
+            <lastmod>2023-07-21T22:49:05+03:00</lastmod>
+            <changefreq>daily</changefreq>
+            <priority>0.5</priority>
+          </url>
+    
+  
     
   
     

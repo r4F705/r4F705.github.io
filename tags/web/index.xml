@@ -7,17 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking_face:</copyright>
-    <lastBuildDate>Wed, 26 Jul 2023 16:06:22 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>HTB Pilgrimage</title>
-      <link>https://r4f705.github.io/ctf/htb-pilgrimage/</link>
-      <pubDate>Wed, 26 Jul 2023 16:06:22 +0300</pubDate>
-      
-      <guid>https://r4f705.github.io/ctf/htb-pilgrimage/</guid>
-      <description>Introduction # Pilgrimage is a machine by HackTheBox created by user coopertim13.</description>
-      
-    </item>
-    
+    <lastBuildDate>Fri, 21 Jul 2023 22:49:05 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Haystack</title>
       <link>https://r4f705.github.io/bug-bounty/haystack/</link>
