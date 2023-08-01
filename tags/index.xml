@@ -7,7 +7,57 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking_face:</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 22:49:05 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 14:47:58 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>binary</title>
+      <link>https://r4f705.github.io/tags/binary/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/binary/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>glib 2.27</title>
+      <link>https://r4f705.github.io/tags/glib-2.27/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/glib-2.27/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>https://r4f705.github.io/tags/heap/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/heap/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>pwn</title>
+      <link>https://r4f705.github.io/tags/pwn/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/pwn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>tcache</title>
+      <link>https://r4f705.github.io/tags/tcache/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/tcache/</guid>
+      <description></description>
+      
+    </item>
+    
     <item>
       <title>cve</title>
       <link>https://r4f705.github.io/tags/cve/</link>
@@ -74,16 +124,6 @@
       <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
       
       <guid>https://r4f705.github.io/tags/poisoning/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>pwn</title>
-      <link>https://r4f705.github.io/tags/pwn/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/pwn/</guid>
       <description></description>
       
     </item>
