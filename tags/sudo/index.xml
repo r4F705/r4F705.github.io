@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sudo on r4f705&#39;s blog</title>
+    <link>https://r4f705.github.io/tags/sudo/</link>
+    <description>Recent content in sudo on r4f705&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>Copy, _right?_ :thinking_face:</copyright>
+    <lastBuildDate>Thu, 03 Aug 2023 11:30:00 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/sudo/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>HTB Sau</title>
+      <link>https://r4f705.github.io/boxes/htb-sau/</link>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/boxes/htb-sau/</guid>
+      <description>Introduction # Sau is an easy Linux machine from HackTheBox created by user sau123.</description>
+      
+    </item>
+    
+  </channel>
+</rss>

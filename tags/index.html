@@ -151,16 +151,6 @@
             
             
             
-  <a href="/binary/"  class="flex items-center">
-    
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Binaries">
-        Binary
-    </p>
-</a>
-
-
-            
-            
   <a href="/bug-bounty/"  class="flex items-center">
     
     <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Bug-bounties">
@@ -170,23 +160,65 @@
 
 
             
-            
-  <a href="/web/"  class="flex items-center">
+             
+  <div>
+  <div class="cursor-pointer flex items-center nested-menu">
     
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="Webs">
-        Web
-    </p>
-</a>
+    <a  class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
+      CTF
+    </a>
+    <span>
+      
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
 
 
-            
-            
-  <a href=""  class="flex items-center">
-    
-    <p class="text-base font-medium text-gray-500 hover:text-gray-900" title="">
-        CTF
-    </p>
-</a>
+    </span>
+  </div>
+  <div class="absolute menuhide">
+    <div class="pt-2 p-5 mt-2 rounded-xl backdrop-blur shadow-2xl">
+      <div class="flex flex-col space-y-3">
+        
+        <a href="/boxes/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Boxes">
+            Boxes
+          </p>
+        </a>
+        
+        <a href="/binary/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="Binaries">
+            Pwn
+          </p>
+        </a>
+        
+        <a href="/tags/web/"  class="flex items-center">
+          
+          <p class="text-sm font-sm text-gray-500 hover:text-gray-900" title="web">
+            Web
+          </p>
+        </a>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
             
@@ -325,20 +357,6 @@
 
                     
   <li class="mt-1">
-    <a href="/binary/"  class="flex items-center">
-        
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Binaries">
-            Binary
-        </p>
-    </a>
-</li>
-
-
-
-                    
-
-                    
-  <li class="mt-1">
     <a href="/bug-bounty/"  class="flex items-center">
         
         <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Bug-bounties">
@@ -351,29 +369,65 @@
 
                     
 
-                    
+                     
   <li class="mt-1">
-    <a href="/web/"  class="flex items-center">
+    <a class="flex items-center">
         
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="Webs">
+        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
+            CTF
+        </p>
+        <span>
+            
+
+  <span class="relative block icon">
+    <svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 20 20"
+  fill="currentColor"
+  aria-hidden="true"
+>
+  <path
+    fill-rule="evenodd"
+    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+    clip-rule="evenodd"
+  />
+</svg>
+
+  </span>
+
+
+        </span>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/boxes/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Boxes">
+            Boxes
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/binary/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="Binaries">
+            Pwn
+        </p>
+    </a>
+</li>
+
+<li class="mt-1">
+    <a href="/tags/web/"  class="flex items-center">
+        
+        <p class="text-sm font-small text-gray-500 hover:text-gray-900" title="web">
             Web
         </p>
     </a>
 </li>
 
-
-
-                    
-
-                    
-  <li class="mt-1">
-    <a href=""  class="flex items-center">
-        
-        <p class="text-bg font-bg text-gray-500 hover:text-gray-900" title="">
-            CTF
-        </p>
-    </a>
-</li>
+<li class="mb-2"></li>
 
 
 
@@ -483,8 +537,8 @@
     <h2 class="flex items-center">
       <a
         class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
-        href="/tags/arm/"
-        >arm</a
+        href="/tags/binary/"
+        >binary</a
       >
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
@@ -505,7 +559,7 @@
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
         <span class="text-base text-neutral-400">
-          1
+          3
         </span>
       
     </h2>
@@ -517,6 +571,54 @@
         class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
         href="/tags/docker/"
         >docker</a
+      >
+      
+        <span class="px-2 text-base text-primary-500">&middot;</span>
+        <span class="text-base text-neutral-400">
+          1
+        </span>
+      
+    </h2>
+  </article>
+    
+      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+    <h2 class="flex items-center">
+      <a
+        class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
+        href="/tags/glib-2.27/"
+        >glib 2.27</a
+      >
+      
+        <span class="px-2 text-base text-primary-500">&middot;</span>
+        <span class="text-base text-neutral-400">
+          1
+        </span>
+      
+    </h2>
+  </article>
+    
+      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+    <h2 class="flex items-center">
+      <a
+        class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
+        href="/tags/heap/"
+        >heap</a
+      >
+      
+        <span class="px-2 text-base text-primary-500">&middot;</span>
+        <span class="text-base text-neutral-400">
+          1
+        </span>
+      
+    </h2>
+  </article>
+    
+      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+    <h2 class="flex items-center">
+      <a
+        class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
+        href="/tags/image-poisoning/"
+        >image poisoning</a
       >
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
@@ -547,13 +649,13 @@
     <h2 class="flex items-center">
       <a
         class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
-        href="/tags/poisoning/"
-        >poisoning</a
+        href="/tags/linux/"
+        >linux</a
       >
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
         <span class="text-base text-neutral-400">
-          1
+          2
         </span>
       
     </h2>
@@ -595,8 +697,40 @@
     <h2 class="flex items-center">
       <a
         class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
-        href="/tags/varnish/"
-        >varnish</a
+        href="/tags/ssrf/"
+        >SSRF</a
+      >
+      
+        <span class="px-2 text-base text-primary-500">&middot;</span>
+        <span class="text-base text-neutral-400">
+          1
+        </span>
+      
+    </h2>
+  </article>
+    
+      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+    <h2 class="flex items-center">
+      <a
+        class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
+        href="/tags/sudo/"
+        >sudo</a
+      >
+      
+        <span class="px-2 text-base text-primary-500">&middot;</span>
+        <span class="text-base text-neutral-400">
+          1
+        </span>
+      
+    </h2>
+  </article>
+    
+      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/4">
+    <h2 class="flex items-center">
+      <a
+        class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
+        href="/tags/tcache/"
+        >tcache</a
       >
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
@@ -617,7 +751,7 @@
       
         <span class="px-2 text-base text-primary-500">&middot;</span>
         <span class="text-base text-neutral-400">
-          2
+          3
         </span>
       
     </h2>

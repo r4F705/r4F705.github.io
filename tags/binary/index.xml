@@ -10,10 +10,10 @@
     <lastBuildDate>Tue, 01 Aug 2023 14:47:58 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/binary/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Fancy Names</title>
-      <link>https://r4f705.github.io/ctf/htb-fancy-names/</link>
+      <link>https://r4f705.github.io/binary/htb-fancy-names/</link>
       <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
       
-      <guid>https://r4f705.github.io/ctf/htb-fancy-names/</guid>
+      <guid>https://r4f705.github.io/binary/htb-fancy-names/</guid>
       <description>Introduction # Fancy Names is a pwn challenge from HackTheBox created by user w3th4nds.</description>
       
     </item>

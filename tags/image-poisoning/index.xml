@@ -10,10 +10,10 @@
     <lastBuildDate>Wed, 26 Jul 2023 16:06:22 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/image-poisoning/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>HTB Pilgrimage</title>
-      <link>https://r4f705.github.io/ctf/htb-pilgrimage/</link>
+      <link>https://r4f705.github.io/boxes/htb-pilgrimage/</link>
       <pubDate>Wed, 26 Jul 2023 16:06:22 +0300</pubDate>
       
-      <guid>https://r4f705.github.io/ctf/htb-pilgrimage/</guid>
+      <guid>https://r4f705.github.io/boxes/htb-pilgrimage/</guid>
       <description>Introduction # Pilgrimage is a machine by HackTheBox created by user coopertim13.</description>
       
     </item>

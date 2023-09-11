@@ -7,13 +7,113 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking_face:</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 22:49:05 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 03 Aug 2023 11:30:00 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>cve</title>
       <link>https://r4f705.github.io/tags/cve/</link>
-      <pubDate>Fri, 21 Jul 2023 22:49:05 +0300</pubDate>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
       
       <guid>https://r4f705.github.io/tags/cve/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>https://r4f705.github.io/tags/linux/</link>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/linux/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>SSRF</title>
+      <link>https://r4f705.github.io/tags/ssrf/</link>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/ssrf/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>sudo</title>
+      <link>https://r4f705.github.io/tags/sudo/</link>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/sudo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>web</title>
+      <link>https://r4f705.github.io/tags/web/</link>
+      <pubDate>Thu, 03 Aug 2023 11:30:00 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/web/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>binary</title>
+      <link>https://r4f705.github.io/tags/binary/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/binary/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>glib 2.27</title>
+      <link>https://r4f705.github.io/tags/glib-2.27/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/glib-2.27/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>heap</title>
+      <link>https://r4f705.github.io/tags/heap/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/heap/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>pwn</title>
+      <link>https://r4f705.github.io/tags/pwn/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/pwn/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>tcache</title>
+      <link>https://r4f705.github.io/tags/tcache/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/tcache/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>image poisoning</title>
+      <link>https://r4f705.github.io/tags/image-poisoning/</link>
+      <pubDate>Wed, 26 Jul 2023 16:06:22 +0300</pubDate>
+      
+      <guid>https://r4f705.github.io/tags/image-poisoning/</guid>
       <description></description>
       
     </item>
@@ -44,56 +144,6 @@
       <pubDate>Fri, 21 Jul 2023 22:49:05 +0300</pubDate>
       
       <guid>https://r4f705.github.io/tags/reversing/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>web</title>
-      <link>https://r4f705.github.io/tags/web/</link>
-      <pubDate>Fri, 21 Jul 2023 22:49:05 +0300</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/web/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>arm</title>
-      <link>https://r4f705.github.io/tags/arm/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/arm/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>poisoning</title>
-      <link>https://r4f705.github.io/tags/poisoning/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/poisoning/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>pwn</title>
-      <link>https://r4f705.github.io/tags/pwn/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/pwn/</guid>
-      <description></description>
-      
-    </item>
-    
-    <item>
-      <title>varnish</title>
-      <link>https://r4f705.github.io/tags/varnish/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
-      
-      <guid>https://r4f705.github.io/tags/varnish/</guid>
       <description></description>
       
     </item>
