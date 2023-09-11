@@ -7,14 +7,14 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <copyright>Copy, _right?_ :thinking_face:</copyright>
-    <lastBuildDate>Fri, 21 Jul 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://r4f705.github.io/binary/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Aug 2023 14:47:58 +0300</lastBuildDate><atom:link href="https://r4f705.github.io/binary/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>ARM Antidote</title>
-      <link>https://r4f705.github.io/binary/arm-antidote/</link>
-      <pubDate>Fri, 21 Jul 2023 00:00:00 +0000</pubDate>
+      <title>HTB Fancy Names</title>
+      <link>https://r4f705.github.io/binary/htb-fancy-names/</link>
+      <pubDate>Tue, 01 Aug 2023 14:47:58 +0300</pubDate>
       
-      <guid>https://r4f705.github.io/binary/arm-antidote/</guid>
-      <description>Lists # To define a list of items, just put a *, a -, or a + at the start of the line of each item of the list followed by at least a space, to end the list, leave a blank line</description>
+      <guid>https://r4f705.github.io/binary/htb-fancy-names/</guid>
+      <description>Introduction # Fancy Names is a pwn challenge from HackTheBox created by user w3th4nds.</description>
       
     </item>
     
