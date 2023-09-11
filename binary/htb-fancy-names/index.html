@@ -746,12 +746,12 @@
 </span></span></code></pre></div><p>To get to the thick of things I will fire <a href="https://binary.ninja/"   target="_blank">
     binary ninja</a>. I use a desktop version of the tool, but there is also a free <a href="https://cloud.binary.ninja/"   target="_blank">
     web app</a> which works fine for most cases. After a few minutes of looking around it seems like there are two functions of interest, <strong>main</strong> and <strong>menu</strong>.</p>
-<div id="looking-of-the-bug-" class="anchor"></div>
-<h4 class="relative group">Looking of the BUG 🐞 
+<div id="looking-for-the-bug-" class="anchor"></div>
+<h4 class="relative group">Looking for the BUG 🐞 
     <span
         class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
         <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
-            style="text-decoration-line: none !important;" href="#looking-of-the-bug-" aria-label="Anchor">#</a></span>        
+            style="text-decoration-line: none !important;" href="#looking-for-the-bug-" aria-label="Anchor">#</a></span>        
     
 </h4>
 <p>The <strong>main</strong> function starts after calling <strong>create_random_username</strong> and <strong>menu</strong> functions. It asks the user to select an option between <em>Upgrade Skills</em> which prompts the user to select a number to indicate a points value and then a string to indicate to which skill to attribute those points, <em>Get Starter Pack</em> which just prints some text to the terminal and <em>Exit</em>. From the three only <em>Upgrade Skills</em> seems of immediate interest because of its more dynamic nature and to be more precise because of the <em>malloc</em> call. Dispite that though there is no bug to exploit here!</p>
