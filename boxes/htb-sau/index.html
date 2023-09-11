@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr" class="scroll-smooth" data-default-appearance="dark"
   data-auto-appearance="true"><head>
-	<meta name="generator" content="Hugo 0.115.4">
   <meta charset="utf-8" />
   
   <meta http-equiv="content-language" content="en" />
@@ -9,18 +8,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>r4f705&#39;s blog</title>
-  <meta name="title" content="r4f705&#39;s blog" />
+  <title>HTB Sau &middot; r4f705&#39;s blog</title>
+  <meta name="title" content="HTB Sau &middot; r4f705&#39;s blog" />
+  
+  <meta name="description" content="Sau machine by hack the box." />
+  <meta name="keywords" content="web, cve, linux, SSRF, sudo, " />
   
   
-  
-  
-  
-  <link rel="canonical" href="https://r4f705.github.io/" />
-  
-  <link rel="alternate" type="application/rss+xml" href="/index.xml" title="r4f705's blog" />
-  
-  <link rel="alternate" type="application/json" href="/index.json" title="r4f705's blog" />
+  <link rel="canonical" href="https://r4f705.github.io/boxes/htb-sau/" />
   
   
   
@@ -63,31 +58,44 @@
   
   
   
-  <meta property="og:title" content="r4f705&#39;s blog" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://r4f705.github.io/" />
+  <meta property="og:title" content="HTB Sau" />
+<meta property="og:description" content="Sau machine by hack the box." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://r4f705.github.io/boxes/htb-sau/" /><meta property="article:section" content="boxes" />
+<meta property="article:published_time" content="2023-08-03T11:30:00+03:00" />
+<meta property="article:modified_time" content="2023-08-03T11:30:00+03:00" />
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="r4f705&#39;s blog"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="HTB Sau"/>
+<meta name="twitter:description" content="Sau machine by hack the box."/>
 
   
   <script type="application/ld+json">
-  {
+  [{
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https:\/\/r4f705.github.io\/",
-    "name": "r4f705\u0027s blog",
-    
+    "@type": "Article",
+    "articleSection": "Boxes",
+    "name": "HTB Sau",
+    "headline": "HTB Sau",
+    "description": "Sau machine by hack the box.",
+    "abstract": "Introduction # Sau is an easy Linux machine from HackTheBox created by user sau123.",
     "inLanguage": "en",
-    "url": "https:\/\/r4f705.github.io\/",
-    
-    "publisher" : {
+    "url" : "https:\/\/r4f705.github.io\/boxes\/htb-sau\/",
+    "author" : {
       "@type": "Person",
       "name": "r4f705"
-    }
-  }
+    },
+    "copyrightYear": "2023",
+    "dateCreated": "2023-08-03T11:30:00\u002b03:00",
+    "datePublished": "2023-08-03T11:30:00\u002b03:00",
+    
+    "dateModified": "2023-08-03T11:30:00\u002b03:00",
+    
+    "keywords": ["web","cve","linux","SSRF","sudo"],
+    
+    "mainEntityOfPage": "true",
+    "wordCount": "646"
+  }]
   </script>
 
 
@@ -500,37 +508,136 @@
   <div class="relative flex flex-col grow">
     <main id="main-content" class="grow">
       
+
+
+<article>
   
   
-    <article
-  class="
-    h-full
-   flex flex-col items-center justify-center text-center"
->
-  <header class="flex flex-col items-center mb-3">
+  
+  
+  
+  
+
+
+<div id="hero" class="h-[150px] md:h-[200px]"></div>
+
+
     
-      
-      
-        
-        <img
-          class="mb-2 rounded-full h-36 w-36"
-          width="144"
-          height="144"
-          alt="r4f705"
-          src="/img/r4f705_no_letters_hu5d5e04bad7e504a4f03e77a113af88d4_147052_288x288_fill_q75_box_center.jpg"
-        />
-      
+    <div class="fixed inset-x-0 top-0 h-[800px] single_hero_background nozoom"
+    style="background-image:url(/img/cpu.jpg);">
     
-    <h1 class="text-4xl font-extrabold">
-      r4f705
+
+
+    <div class="absolute inset-0 bg-gradient-to-t from-neutral dark:from-neutral-800 to-transparent mix-blend-normal">
+    </div>
+    <div
+        class="absolute inset-0 opacity-60 bg-gradient-to-t from-neutral dark:from-neutral-800 to-neutral-100 dark:to-neutral-800 mix-blend-normal">
+    </div>
+</div>
+
+<div id="background-blur" class="fixed opacity-0 inset-x-0 top-0 h-full single_hero_background nozoom backdrop-blur-2xl"></div>
+<script>
+    window.addEventListener('scroll', function (e) {
+        var scroll = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+        var background_blur = document.getElementById('background-blur');
+        background_blur.style.opacity = (scroll / 300)
+    });
+</script>
+
+  
+  
+
+  <header id="single_header" class="mt-5 max-w-prose">
+    
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
+      HTB Sau
     </h1>
-    
-      <h2 class="text-xl text-neutral-500 dark:text-neutral-400">
-        A key pressing hacker
-      </h2>
-    
-    <div class="mt-1 text-2xl">
+    <div class="mt-1 mb-6 text-base text-neutral-500 dark:text-neutral-400 print:hidden">
       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="flex flex-row flex-wrap items-center">
+  
+  
+  <time datetime="2023-08-03 11:30:00 &#43;0300 EEST">3 August 2023</time><span class="px-2 text-primary-500">&middot;</span><span>646 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">4 mins</span>
+  
+
+  
+  
+</div>
+
+
+
+
+
+
+
+    </div>
+
+    
+    
+    
+    
+    
+
+    
+    
+    <div class="flex">
+  
+  
+  
+  
+  <img class="!mt-0 !mb-0 h-24 w-24 rounded-full ltr:mr-4 rtl:ml-4" width="96" height="96"
+    alt="r4f705" src="/img/r4f705_no_letters_hu5d5e04bad7e504a4f03e77a113af88d4_147052_192x192_fill_q75_box_center.jpg" />
+  
+  
+  <div class="place-self-center">
+    
+    <div class="text-[0.6rem] uppercase leading-3 text-neutral-500 dark:text-neutral-400">
+      Author
+    </div>
+    <div class="font-semibold leading-6 text-neutral-800 dark:text-neutral-300">
+      r4f705
+    </div>
+    
+    
+    <div class="text-sm text-neutral-700 dark:text-neutral-400">Sometimes when I press the correct sequence of keys computer&rsquo;s do my bidding!</div>
+    
+    <div class="text-2xl sm:text-lg">
   <div class="flex flex-wrap text-neutral-400 dark:text-neutral-500">
     
       
@@ -571,20 +678,309 @@
     
   </div>
 
+</div>
+  </div>
+</div>
+    
 
-    </div>
+    
+    
+    
+
+    
+
+    
+    <div class="mb-5"></div>
+    
+  
   </header>
-  <section class="prose dark:prose-invert"></section>
-</article>
-<section>
+  
+  <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
+    
+    
+
+      <div class="min-w-0 min-h-0 max-w-fit">
+        
+        
+
+
+        <div class="max-w-prose mb-20">
+          <div id="introduction" class="anchor"></div>
+<h2 class="relative group">Introduction 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#introduction" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Sau is an easy Linux machine from HackTheBox created by user <a href="https://app.hackthebox.com/users/201596"   target="_blank">
+    sau123</a>.</p>
+<p>A fairly easy Linux machine which involves exploiting a server side request forgery to reach a vulnerable service running on the internal network. From there an unsecure command can be executed with sudo giving root access to the machine.</p>
+<div id="information-gathering" class="anchor"></div>
+<h2 class="relative group">Information Gathering 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#information-gathering" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Starting with a <strong>rustscan</strong> to find all the open ports on the server.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">.----. .-. .-. .----..---.  .----. .---.   .--.  .-. .-.
+</span></span><span class="line"><span class="cl"><span class="p">|</span> <span class="o">{}</span>  <span class="o">}</span><span class="p">|</span> <span class="o">{</span> <span class="o">}</span> <span class="p">|</span><span class="o">{</span> <span class="o">{</span>__ <span class="o">{</span>_   _<span class="o">}{</span> <span class="o">{</span>__  /  ___<span class="o">}</span> / <span class="o">{}</span> <span class="se">\ </span><span class="p">|</span>  <span class="sb">`</span><span class="p">|</span> <span class="p">|</span>
+</span></span><span class="line"><span class="cl"><span class="p">|</span> .-. <span class="se">\|</span> <span class="o">{</span>_<span class="o">}</span> <span class="p">|</span>.-._<span class="o">}</span> <span class="o">}</span> <span class="p">|</span> <span class="p">|</span>  .-._<span class="o">}</span> <span class="o">}</span><span class="se">\ </span>    <span class="o">}</span>/  /<span class="se">\ </span> <span class="se">\|</span> <span class="p">|</span><span class="se">\ </span> <span class="p">|</span>
+</span></span><span class="line"><span class="cl"><span class="sb">`</span>-<span class="s1">&#39; `-&#39;</span><span class="sb">`</span>-----<span class="s1">&#39;`----&#39;</span>  <span class="sb">`</span>-<span class="s1">&#39;  `----&#39;</span>  <span class="sb">`</span>---<span class="s1">&#39; `-&#39;</span>  <span class="sb">`</span>-<span class="s1">&#39;`-&#39;</span> <span class="sb">`</span>-<span class="err">&#39;</span>
+</span></span><span class="line"><span class="cl">The Modern Day Port Scanner.
+</span></span><span class="line"><span class="cl">________________________________________
+</span></span><span class="line"><span class="cl">: http://discord.skerritt.blog           :
+</span></span><span class="line"><span class="cl">: https://github.com/RustScan/RustScan :
+</span></span><span class="line"><span class="cl"> --------------------------------------
+</span></span><span class="line"><span class="cl">Real hackers hack <span class="nb">time</span> ⌛
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Open 10.10.11.224:22
+</span></span><span class="line"><span class="cl">Open 10.10.11.224:55555
+</span></span><span class="line"><span class="cl"><span class="o">[</span>~<span class="o">]</span> Starting Script<span class="o">(</span>s<span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">[</span>~<span class="o">]</span> Starting Nmap 7.94 <span class="o">(</span> https://nmap.org <span class="o">)</span> at 2023-08-02 17:57 EEST
+</span></span><span class="line"><span class="cl">Initiating Ping Scan at 17:57
+</span></span><span class="line"><span class="cl">Scanning 10.10.11.224 <span class="o">[</span><span class="m">2</span> ports<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Completed Ping Scan at 17:57, 0.13s elapsed <span class="o">(</span><span class="m">1</span> total hosts<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Initiating Parallel DNS resolution of <span class="m">1</span> host. at 17:57
+</span></span><span class="line"><span class="cl">Completed Parallel DNS resolution of <span class="m">1</span> host. at 17:57, 0.00s elapsed
+</span></span><span class="line"><span class="cl">DNS resolution of <span class="m">1</span> IPs took 0.01s. Mode: Async <span class="o">[</span><span class="c1">#: 3, OK: 1, NX: 0, DR: 0, SF: 0, TR: 1, CN: 0]</span>
+</span></span><span class="line"><span class="cl">Initiating Connect Scan at 17:57
+</span></span><span class="line"><span class="cl">Scanning 10.10.11.224 <span class="o">(</span>10.10.11.224<span class="o">)</span> <span class="o">[</span><span class="m">2</span> ports<span class="o">]</span>
+</span></span><span class="line"><span class="cl">Discovered open port 22/tcp on 10.10.11.224
+</span></span><span class="line"><span class="cl">Discovered open port 55555/tcp on 10.10.11.224
+</span></span><span class="line"><span class="cl">Completed Connect Scan at 17:57, 0.13s elapsed <span class="o">(</span><span class="m">2</span> total ports<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Nmap scan report <span class="k">for</span> 10.10.11.224 <span class="o">(</span>10.10.11.224<span class="o">)</span>
+</span></span><span class="line"><span class="cl">Host is up, received conn-refused <span class="o">(</span>0.13s latency<span class="o">)</span>.
+</span></span><span class="line"><span class="cl">Scanned at 2023-08-02 17:57:52 EEST <span class="k">for</span> 0s
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">PORT      STATE SERVICE REASON
+</span></span><span class="line"><span class="cl">22/tcp    open  ssh     syn-ack
+</span></span><span class="line"><span class="cl">55555/tcp open  unknown syn-ack
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">Read data files from: /usr/local/bin/../share/nmap
+</span></span><span class="line"><span class="cl">Nmap <span class="k">done</span>: <span class="m">1</span> IP address <span class="o">(</span><span class="m">1</span> host up<span class="o">)</span> scanned in 0.29 seconds
+</span></span></code></pre></div><p>Ports 22 and 55555 are open. Port 22 is the default port for SSH. Port 55555 is definetly not standard though. Visiting this port from the browser reveals a website.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.14.18%20AM.png" alt="Alt text" />
+      <figcaption>main webpage</figcaption>
+    </figure>
+  
+
+</p>
+<p>The website seems like it creates a dynamic <strong>basket</strong> which <strong>collects</strong> http requests. Essentially it creates a new url point which takes any http request made to it and catalogues it.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.14.37%20AM.png" alt="Alt text" />
+      <figcaption>new basket creation</figcaption>
+    </figure>
+  
+
+</p>
+<div id="getting-user-access" class="anchor"></div>
+<h2 class="relative group">Getting User Access 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#getting-user-access" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Going to the settings of the selected basket I can configure a url which will be used as a forward location. Also to capture the response of the forwarded request I will select the <strong>Proxy Response</strong>.</p>
+<p>Naturally in a case like this I will try using the local <strong>IP</strong> as a forward address to scan the internal network. As it happens there are no security mechanisms to prevent this and the request will go through, acting like the host system of the website made the request itself.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.17.28%20AM.png" alt="Alt text" />
+      <figcaption>setting up a forward address</figcaption>
+    </figure>
+  
+
+</p>
+<p>Inspecting the response there seems to be something running on port 80 for the internal network. More specifically it is a vulnerable version of <a href="https://github.com/stamparm/maltrail"   target="_blank">
+    maltrail</a>, a malicious traffic detection system.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.19.36%20AM.png" alt="Alt text" />
+      <figcaption>rendered response of forwarded request</figcaption>
+    </figure>
+  
+
+</p>
+<p>This version of maltrail is vulnerable to a <a href="%22https://huntr.dev/bounties/be3c5204-fbd9-448d-b97c-96a8d2941e87/%22"  >
+    command injection</a>. I will be using <a href="https://github.com/spookier/Maltrail-v0.53-Exploit"   target="_blank">
+    this</a> exploit found on github which is just a wrapper to using curl to send a http post request with the command injected as its data. Also I will be updating the forwarded url to include <em>/input</em> as this is the route that is actually vulnerable. This will turn the new forward url to <em>http://127.0.0.1:55555/login</em>. To get a reverse shell I set up a listener and fire up the exploit.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.23.18%20AM.png" alt="Alt text" />
+      <figcaption>logged in as user puma</figcaption>
+    </figure>
   
 
 
-</section>
+
+
+
+
 
   
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.23.35%20AM.png" alt="Alt text" />
+      <figcaption>executing the exploit</figcaption>
+    </figure>
+  
 
+</p>
+<div id="getting-root-access" class="anchor"></div>
+<h2 class="relative group">Getting Root Access 
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#getting-root-access" aria-label="Anchor">#</a></span>        
+    
+</h2>
+<p>Getting root access is very straight forward. Using the sudo -l command I can see that my user <em>puma</em> can execute <strong>/usr/bin/systemctl status trail.service</strong> as root.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.25.31%20AM.png" alt="Alt text" />
+      <figcaption>puma can exececute command with sudo</figcaption>
+    </figure>
+  
+
+</p>
+<p>Executing this command will drop me in a <em>pager</em> like <em>less</em> with elavated privileged. From there I can execute any command as root.</p>
+<p>
+
+
+
+
+  
+  
+  
+    <figure>
+      <img class="my-0 rounded-md" src="Screenshot%202023-08-03%20at%2011.26.26%20AM.png" alt="Alt text" />
       
+    </figure>
+  
+
+</p>
+
+        </div>
+                
+        
+
+        
+
+          
+      </div>
+     
+     <script>
+        var oid = "views_boxes\/htb-sau\/index.md"
+        var oid_likes = "likes_boxes\/htb-sau\/index.md"
+      </script>
+      
+      
+      <script type="text/javascript" src="/js/page.min.0e49973b4ad0a382c7c6012d8bff8226316642daabc4f8a20477bd08674f3da6e2fa993bc20ad4f51e7c5bb68e6f913a207a7c4fe37ea0e7b806894afce0a64e.js" integrity="sha512-DkmXO0rQo4LHxgEti/&#43;CJjFmQtqrxPiiBHe9CGdPPabi&#43;pk7wgrU9R58W7aOb5E6IHp8T&#43;N&#43;oOe4BolK/OCmTg=="></script>
+  
+    </section>
+  <footer class="pt-8 max-w-prose print:hidden">
+
+    
+  
+    
+    
+    
+    <div class="pt-8">
+      <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
+      <div class="flex justify-between pt-3">
+        <span>
+          
+            <a class="flex group mr-3" href="/boxes/htb-pilgrimage/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >HTB Pilgrimage</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2023-07-26 16:06:22 &#43;0300 EEST">26 July 2023</time>
+                  
+                </span>
+              </span>
+            </a>
+          
+        </span>
+        <span>
+          
+        </span>
+      </div>
+    </div>
+  
+
+
+    
+  </footer>
+</article>
+
+      <div id="top-scroller" class="pointer-events-none absolute top-[110vh] bottom-0 w-12 ltr:right-0 rtl:left-0">
+  <a href="#the-top"
+    class="pointer-events-auto sticky top-[calc(100vh-5.5rem)] flex h-12 w-12 mb-16 items-center justify-center rounded-full bg-neutral/50 text-xl text-neutral-700 backdrop-blur hover:text-primary-600 dark:bg-neutral-800/50 dark:text-neutral dark:hover:text-primary-400"
+    aria-label="Scroll to top" title="Scroll to top">
+    &uarr;
+  </a>
+</div>
     </main><footer id="site-footer" class="py-10 print:hidden">
   
   
